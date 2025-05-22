@@ -21,7 +21,9 @@ My addition is the following 4 files:
 With these files and a running neo4j database you can crawl and query any website and talk to your website with the added 
 benefits of additional context and reduced hallucinations, which graph technology and graph databases provide. 
 
-
+Next Steps: 
+Finish Jupiter notebook versions of the workflow
+Add additional detailed comments
 -----------------------------------------------
 
 
