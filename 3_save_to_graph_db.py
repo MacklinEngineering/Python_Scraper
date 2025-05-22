@@ -1,3 +1,11 @@
+'''
+May 21, 2025
+Nyah Macklin
+This file saves the text recieved from beautifulsoups' crawler and saves it to the Neo4j graph db.
+
+'''
+
+
 import os
 import json
 from pathlib import Path
