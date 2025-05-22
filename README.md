@@ -1,3 +1,32 @@
+### Chat with Your Websites with GraphRAG
+
+
+This is my feature addition to Allycat - a Chatbot talking to websites.
+
+I added GraphRAG functionality which is a normal RAG pproach in AI where the R path includes a Knowledge Graph.
+
+This builds off Neo4j as the Graph Database, the Neo4j GraphRAG Python Package, a GUI (chatbot interface), and python with a few utilities including beautifulsoup for the web scraping.
+
+My addition is the following 4 files:
+
+1_crawl_site_bs4.py (beautoful soup custom scraper)
+
+2b_process_html_bs4.py
+
+3a_save_to_graph_db.py
+
+4_query_graph.py
+
+
+With these files and a running neo4j database you can crawl and query any website and talk to your website with the added 
+benefits of additional context and reduced hallucinations, which graph technology and graph databases provide. 
+
+
+-----------------------------------------------
+
+
+
+
 <img src="assets/allycat.png" alt="Alley Cat" width="200"/>
 
 ![License](https://img.shields.io/github/license/The-AI-Alliance/allycat)
