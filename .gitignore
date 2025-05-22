@@ -1,0 +1,15 @@
+workspace/
+*.out*
+.directory
+venv*
+.vscode
+
+.env
+
+*.db
+*.db.lock
+
+## profiling outputs
+*.speed
+
+__pycache__
