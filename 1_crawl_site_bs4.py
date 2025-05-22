@@ -1,3 +1,17 @@
+"""
+May 21, 2025
+Nyah Macklin
+
+This crawler is used created to replace the original dpk_web2parquet crawler due to found HTML formatting issues.
+Key differences:
+1. Uses BeautifulSoup4 for HTML parsing
+2. Maintains proper HTML formatting throughout the document (does not break formatting)
+3. Added MIME type detection to properly handle different file types (e.g., PDFs vs HTML)
+   - This addition was made after discovering that PDF files were being incorrectly processed as HTML
+   - The docling processor was failing when trying to parse these misidentified files
+4. Improved URL cleaning and validation
+"""
+
 import os
 import sys
 import shutil
@@ -11,17 +25,6 @@ import logging
 
 # Configure logging to the WARN level
 logging.basicConfig(level=logging.WARN)
-
-"""
-This crawler was created to replace the original dpk_web2parquet crawler due to HTML formatting issues.
-Key differences from the original crawler:
-1. Uses BeautifulSoup4 for robust HTML parsing
-2. Maintains proper HTML formatting throughout the document
-3. Added MIME type detection to properly handle different file types (e.g., PDFs vs HTML)
-   - This addition was made after discovering that PDF files were being incorrectly processed as HTML
-   - The docling processor was failing when trying to parse these misidentified files
-4. Improved URL cleaning and validation
-"""
 
 class WebsiteCrawler:
     def __init__(self, start_url, max_depth, max_downloads, output_folder):
