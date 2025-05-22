@@ -1,3 +1,10 @@
+"""
+May 21, 2025
+Nyah Macklin
+
+This file queries the knowledge graph created from the process and then serves it to the LLM as context to answer questions. 
+"""
+
 import os
 from typing import List, Dict, Any
 
